@@ -5,7 +5,7 @@ import random
 import matplotlib.dates as mdates
 
 # Charger les données Excel
-file_path = "dimensionnement_pilotes.xlsx"
+file_path = "C:\Dimensionnement\dimensionnement_pilotes.xlsx"
 xls = pd.ExcelFile(file_path)
 
 df_vols = pd.read_excel(xls, "Programme_vols")
