@@ -11,7 +11,7 @@ uploaded_file = st.file_uploader("Choisissez un fichier Excel", type=["xlsx"])
 if uploaded_file is not None:
 
     # Charger les données Excel
-    xls = pd.ExcelFile(uploaded_file)
+    xls = pd.ExcelFile(uploaded_file,engine="openpyxl")
 
     df_vols = pd.read_excel(xls, "Programme_vols")
     df_parametres = pd.read_excel(xls, "Parametres")
